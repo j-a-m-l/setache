@@ -3,9 +3,8 @@
 # Colors TODO bold
 local azul_clarito=$( printf "\e[38;5;25m")
 local azul_oscuro=$( printf "\e[38;5;33m")
-local azul=$fg_bold[blue]
+local azul_bold=$fg_bold[blue]
 local granate=$( printf "\e[38;5;125m")
-local rojazo=$fg_bold[red]
 
 # Git colors
 GIT_PROMPT_COLOR=$( printf "\e[38;5;144m") # TODO Based on dirty or clean
@@ -41,9 +40,9 @@ USER_PROMPT_="%{$azul_clarito%}%n"
 HOST_PROMPT_="%{$azul_oscuro%}@%m"
 
 # TODO current folder name with different color
-PATH_PROMPT_="%{$azul%}%~%{$reset_color%}"
+PATH_PROMPT_="%{$azul_bold%}%~%{$reset_color%}"
 
-PROMPT_SYMBOL_="%{$rojazo%}»%{$reset_color%}"
+PROMPT_SYMBOL_="%{$azul_bold%}»%{$reset_color%}"
 
 # Git Prompt
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$GIT_PROMPT_COLOR%}"
